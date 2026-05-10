@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כשהקולות מתחזקים - בחירות</title>
+    <meta name="description" content="לא שוחים נגד, מצביעים! אתר מידע על בחירות, 5 סיבות למה להצביע ושאלון התאמה.">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="תמונות/לוגו.png" alt="לוגו האתר" class="ms-2" style="width: 50px; border-radius: 50%;">
+                כשהקולות מתחזקים
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reasons">למה להצביע?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#graph">על אותו גל</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#questionnaire">שאלון התאמה</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parties">מפלגות</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center d-flex align-items-center position-relative">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">יש לך פה חצוף? תנו לו לעבוד בקלפי!</h1>
+            <p class="lead fw-bold mb-4">לא שוחים נגד, מצביעים!</p>
+            <a href="#reasons" class="btn btn-custom-primary btn-lg">אדישות זה לחלשים</a>
+        </div>
+    </header>
+
+    <!-- 5 Reasons Section -->
+    <section id="reasons" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">כשהתירוצים נחלשים הנה 5 סיבות למה להצביע:</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <img src="תמונות/שמחליטים עלינו .png" alt="שמחליטים עלינו"
+                            class="img-fluid rounded mb-3" style="max-height: 120px; display: block; margin: 0 auto;">
+                        <div class="reason-number">1</div>
+                        <h3 class="h5 fw-bold">כי נמאס לנו שקובעים עבורנו</h3>
+                        <p>הדור שלנו נופל בין הכיסאות ויש תחושה שלא סופרים אותנו. הצבעה היא הדרך האמיתית להפסיק להיות
+                            פסיביים לחיים שלנו ולהוביל שינוי באמת.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <img src="תמונות/הבית שלנו.png" alt="הבית שלנו"
+                            class="img-fluid rounded mb-3" style="max-height: 120px; display: block; margin: 0 auto;">
+                        <div class="reason-number">2</div>
+                        <h3 class="h5 fw-bold">זה הבית שלנו</h3>
+                        <p>למה שלא ניתן לו את הקול שלנו? זה לא סתם פוליטיקה, זה המקום שבו אנחנו מבלים/ות, עובדים/ות
+                            וחולמים/ות את העתיד שלנו. הצבעה היא סימן ״שאכפת לי מהבית שלי״.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <img src="תמונות/לוקחים לנו את הקול .png" alt="לוקחים לנו את הקול"
+                            class="img-fluid rounded mb-3" style="max-height: 120px; display: block; margin: 0 auto;">
+                        <div class="reason-number">3</div>
+                        <h3 class="h5 fw-bold">ניתן לאחרים להשתמש בקול שלנו?</h3>
+                        <p>אם נמנע מלהצביע אנחנו ניתן לאחרים להשתמש בקול שלנו. הימנעות מהצבעה שוות ערך לנתינת הקול שלך
+                            לאדם בעל דעות שונות או מנוגדות אלייך. הקול שלך לא נעלם הוא פשוט עובר למישהו אחר.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <img src="תמונות/דורות הבאים.png" alt="דורות הבאים"
+                            class="img-fluid rounded mb-3" style="max-height: 120px; display: block; margin: 0 auto;">
+                        <div class="reason-number">4</div>
+                        <h3 class="h5 fw-bold">לא רק על עצמנו אלא גם על הדורות הבאים</h3>
+                        <p>יש לנו את הכוח להשפיע. כשאנחנו יוצאים להצביע אנחנו נותנים ביטחון לאחרים שגם להם/ן יש את הכוח
+                            להשפיע.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="reason-card">
+                        <img src="תמונות/ImageToStl.com_PHOTO-2026-05-10-11-17-03.png" alt="בואו נדבר תכלס"
+                            class="img-fluid rounded mb-3" style="max-height: 120px; display: block; margin: 0 auto;">
+                        <div class="reason-number">5</div>
+                        <h3 class="h5 fw-bold">בואו נדבר תכל׳ס</h3>
+                        <p>להצביע לוקח פחות זמן מלהעלות סטורי מושקע וההשפעה של זה נשארת יותר מ-24 שעות. נשקיע חמש דקות
+                            בעתיד שלנו ונמשיך משם ליום חופש בראש שקט.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini Game Section -->
+            <div class="mt-5 pt-5 text-center">
+                <h3 class="fw-bold mb-4" style="color: var(--primary-dark);">עדיין מתלבטים? בואו נראה אתכם גולשים לקלפי!</h3>
+                <div id="game-container" class="mx-auto rounded" style="height: 500px;">
+                    <!-- נגן YouTube -->
+                    <div id="yt-api-container">
+                        <div id="player"></div>
+                    </div>
+
+                    <canvas id="gameCanvas"></canvas>
+                    
+                    <div id="score-display">מרחק: <span id="score">0</span> מ'</div>
+
+                    <button id="music-toggle" onclick="toggleMusic()">🔇</button>
+
+                    <!-- מסך פתיחה -->
+                    <div id="start-screen" class="ui-layer">
+                        <h2 class="game-title">גולשים לקלפי</h2>
+                        <p class="game-desc">התחמקו מהתירוצים והגיעו להצביע!<br>השיר יתחיל עם תחילת המשחק.</p>
+                        <button class="action-btn" onclick="startGame()">התחל לגלוש</button>
+                    </div>
+
+                    <!-- מסך פסילה -->
+                    <div id="game-over-screen" class="ui-layer hidden">
+                        <h2 class="game-title" style="color: #ff3366;">נפסלת חזק!</h2>
+                        <p class="game-desc">תירוצים לא יעזרו כאן. המרחק שלך: <span id="final-score">0</span> מ'</p>
+                        <button class="action-btn" onclick="startGame()">נסה שוב</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graph Section -->
+    <section id="graph" class="section-padding" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">״אוקי אבל הנה גרסה בלי הבולשיט״</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="תמונות/גרף.png" alt="גרף נתונים שמראה את התפלגות הקולות" class="img-fluid graph-image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="graph-container">
+                        <h3 class="mb-4">מי משדר על אותו גל כמוני?</h3>
+                        <p class="fs-5">
+                            כאן נמצא צ׳ק ליסט שמסביר מה בכלל צריך לחפש במצע/מידע על מפלגות כדי להבין למי בעצם הכי כדאי
+                            לנו להצביע!
+                        </p>
+                        <p>
+                            מי הכי מתאים לדעות שלנו במגוון תחומים כמו כלכלה, חינוך וביטחון, מי יספק פתרונות שיותר
+                            מתאימים למדינה בעיני ומי הכי פחות יעצבן אותנו בארבע שנים הקרובות.
+                        </p>
+                        <a href="#questionnaire" class="btn btn-custom-secondary mt-3">בואו נבדוק</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section id="questionnaire" class="section-padding questionnaire-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <img src="תמונות/מי משדר על אותו גל כמוני.png" alt="מי משדר על אותו גל כמוני"
+                    class="img-fluid rounded shadow" style="max-height: 250px;">
+            </div>
+            <h2 class="section-title">צ׳ק ליסט לחיפוש</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="questionnaire-form">
+
+                        <div class="question-box">
+                            <h3 class="question-title">1. מה סדר העדיפויות? (סמן מה מקבל הכי הרבה דגש)</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1a" value="ביטחון">
+                                        <label class="form-check-label" for="q1a">ביטחון</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1b"
+                                            value="כלכלה / יוקר מחיה">
+                                        <label class="form-check-label" for="q1b">כלכלה / יוקר מחיה</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1c" value="חינוך">
+                                        <label class="form-check-label" for="q1c">חינוך</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1d" value="בריאות">
+                                        <label class="form-check-label" for="q1d">בריאות</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1e" value="דיור">
+                                        <label class="form-check-label" for="q1e">דיור</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1f" value="דת ומדינה">
+                                        <label class="form-check-label" for="q1f">דת ומדינה</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1g" value="משפט ומשילות">
+                                        <label class="form-check-label" for="q1g">משפט ומשילות</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1h"
+                                            value="תחבורה / תשתיות">
+                                        <label class="form-check-label" for="q1h">תחבורה / תשתיות</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q1i" value="סביבה">
+                                        <label class="form-check-label" for="q1i">סביבה</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">2. האם יש תוכניות קונקרטיות?</h3>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q2a">
+                                <label class="form-check-label" for="q2a">יש צעדים ברורים ולא רק סיסמאות</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q2b">
+                                <label class="form-check-label" for="q2b">יש יעדים מדידים</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q2c">
+                                <label class="form-check-label" for="q2c">מוסבר איך המדיניות תיושם</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q2d">
+                                <label class="form-check-label" for="q2d">יש לוחות זמנים</label>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">3. האם זה כלכלית הגיוני?</h3>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q3a">
+                                <label class="form-check-label" for="q3a">מוסבר מאיפה יבוא התקציב</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q3b">
+                                <label class="form-check-label" for="q3b">אין סתירה בין הורדת מסים להגדלת הוצאות</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q3c">
+                                <label class="form-check-label" for="q3c">יש הערכות עלות או מקורות מימון</label>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">4. האם המצע עקבי?</h3>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q4a">
+                                <label class="form-check-label" for="q4a">העמדות לא סותרות אחת את השנייה</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q4b">
+                                <label class="form-check-label" for="q4b">יש קו אידאולוגי ברור</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q4c">
+                                <label class="form-check-label" for="q4c">המצע דומה למה שהמפלגה עשתה בעבר</label>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">5. מה אומרים על נושאים רגישים?</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5a">
+                                        <label class="form-check-label" for="q5a">מערכת המשפט</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5b">
+                                        <label class="form-check-label" for="q5b">זכויות אזרח</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5c">
+                                        <label class="form-check-label" for="q5c">חופש ביטוי</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5d">
+                                        <label class="form-check-label" for="q5d">דת ומדינה</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5e">
+                                        <label class="form-check-label" for="q5e">מיעוטים</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="q5f">
+                                        <label class="form-check-label" for="q5f">פרטיות וטכנולוגיה</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">6. מה חסר?</h3>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q6a">
+                                <label class="form-check-label" for="q6a">יש נושאים חשובים שלא מוזכרים בכלל?</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q6b">
+                                <label class="form-check-label" for="q6b">יש הבטחות גדולות בלי פירוט?</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q6c">
+                                <label class="form-check-label" for="q6c">יש שימוש מוגזם בסיסמאות?</label>
+                            </div>
+                        </div>
+
+                        <div class="question-box">
+                            <h3 class="question-title">7. מבחן הסיום - בסוף הקריאה שאל את עצמך:</h3>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q7a">
+                                <label class="form-check-label" for="q7a">האם אני מבין מה המפלגה באמת רוצה
+                                    לעשות?</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q7b">
+                                <label class="form-check-label" for="q7b">האם אני מבין איך היא מתכוונת לעשות את
+                                    זה?</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q7c">
+                                <label class="form-check-label" for="q7c">האם זה נראה ישים?</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="q7d">
+                                <label class="form-check-label" for="q7d">האם אני סומך עליה לבצע את זה?</label>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-custom-primary btn-lg">הצג תוצאה</button>
+                        </div>
+                    </form>
+
+                    <div id="result-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parties Section -->
+    <section id="parties" class="section-padding parties-section">
+        <div class="container">
+            <h2 class="section-title">מי נגד מי בים הסוער הזה</h2>
+
+            <div class="position-relative mx-auto" style="max-width: 1000px;">
+                <!-- Background Inspiration Image -->
+                <img src="תמונות/מפלגות.png" alt="ים סוער" class="w-100 rounded shadow">
+
+                <!-- Overlay Links -->
+                <style>
+                    .party-box {
+                        position: absolute;
+                        background: #fff;
+                        border: 3px solid #333;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        text-decoration: none;
+                        color: var(--primary-dark);
+                        font-weight: bold;
+                        transition: transform 0.2s;
+                        width: 13%;
+                        aspect-ratio: 1;
+                        padding: 2%;
+                        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                    }
+
+                    .party-box:hover {
+                        transform: scale(1.1);
+                        z-index: 10;
+                        color: var(--accent-green);
+                    }
+
+                    .party-box span {
+                        font-size: 0.9vw;
+                    }
+
+                    .party-icon {
+                        font-size: 2vw;
+                        margin-bottom: 5px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .party-box span {
+                            font-size: 1.5vw;
+                        }
+
+                        .party-icon {
+                            font-size: 3vw;
+                            margin-bottom: 2px;
+                        }
+                    }
+                </style>
+
+                <!-- Box 1 (Top Left) -->
+                <a href="https://www.idi.org.il/media/6698/likud-18.pdf" target="_blank" class="party-box"
+                    style="top: 24%; left: 24%;">
+                    <div class="party-icon">🟦</div>
+                    <span>הליכוד</span>
+                </a>
+
+                <!-- Box 2 (Mid Far Left) -->
+                <a href="https://www.idi.org.il/policy/parties-and-elections/parties/yashar" target="_blank"
+                    class="party-box" style="top: 36%; left: 6%;">
+                    <div class="party-icon">⚖️</div>
+                    <span>ישר</span>
+                </a>
+
+                <!-- Box 3 (Bottom Left) -->
+                <a href="https://www.idi.org.il/media/12315/%D7%96%D7%94%D7%95%D7%AA-%D7%9E%D7%A6%D7%A2.pdf"
+                    target="_blank" class="party-box" style="top: 56%; left: 22%;">
+                    <div class="party-icon">🦅</div>
+                    <span>זהות</span>
+                </a>
+
+                <!-- Box 4 (Bottom Far Left) -->
+                <a href="https://www.idi.org.il/policy/parties-and-elections/parties/democrats" target="_blank"
+                    class="party-box" style="top: 67%; left: 5%;">
+                    <div class="party-icon">🕊️</div>
+                    <span>הדמוקרטים</span>
+                </a>
+
+                <!-- Box 5 (Top Right) -->
+                <a href="https://www.idi.org.il/policy/parties-and-elections/parties/beyachad" target="_blank"
+                    class="party-box" style="top: 27%; left: 65%;">
+                    <div class="party-icon">🤝</div>
+                    <span>ביחד</span>
+                </a>
+
+                <!-- Box 6 (Mid Far Right) -->
+                <a href="https://zionutdatit.org.il/%D7%9E%D7%A6%D7%A2-%D7%94%D7%9E%D7%A4%D7%9C%D7%92%D7%94/"
+                    target="_blank" class="party-box" style="top: 36%; left: 83%;">
+                    <div class="party-icon">🕍</div>
+                    <span>הציונות הדתית</span>
+                </a>
+
+                <!-- Box 7 (Bottom Right) -->
+                <a href="https://ozma-yeudit.co.il" target="_blank" class="party-box" style="top: 56%; left: 66%;">
+                    <div class="party-icon">💪</div>
+                    <span>עוצמה יהודית</span>
+                </a>
+
+                <!-- Box 8 (Bottom Far Right) -->
+                <a href="https://www.idi.org.il/policy/parties-and-elections/parties/shas" target="_blank"
+                    class="party-box" style="top: 66%; left: 84%;">
+                    <div class="party-icon">📜</div>
+                    <span>ש"ס</span>
+                </a>
+
+                <!-- Box 9 (Added Top Center Left) -->
+                <a href="https://www.idi.org.il/media/16883/%D7%A8%D7%A2%D7%9E-1999.pdf" target="_blank"
+                    class="party-box" style="top: 8%; left: 35%;">
+                    <div class="party-icon">🕌</div>
+                    <span>רע"ם</span>
+                </a>
+
+                <!-- Box 10 (Added Top Center Right) -->
+                <a href="https://www.idi.org.il/policy/parties-and-elections/parties/hadash-taal" target="_blank"
+                    class="party-box" style="top: 8%; left: 53%;">
+                    <div class="party-icon">🤝🏾</div>
+                    <span>חד"ש-תע"ל</span>
+                </a>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <h3 class="fw-bold" style="color: var(--accent-green);">מי שרוצה קל, קל זה בקלפי!</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h4 class="mb-4">כשהקולות מתחזקים</h4>
+            <div class="mb-3">
+                <p>נוצר על ידי קבוצת אזרחים שאכפת להם ממה שקורה פה.<br>יוצרי האתר: דריה וורוטילין, שי פישמן, רני רשף</p>
+                <a href="about.html">אודות</a> | <a href="mailto:dvorotilina@gmail.com">תמיכה</a>
+            </div>
+            <p class="mt-4 mb-0 fw-bold fs-5" style="color: var(--accent-yellow);">אם הגעת עד לפה יאללה לכו להצביע!</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
