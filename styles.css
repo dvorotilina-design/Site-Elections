@@ -367,34 +367,6 @@ button.action-btn:hover {
   pointer-events: none;
 }
 
-/* נגן מוסתר לגמרי */
-#yt-api-container {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  top: -100px;
-  left: -100px;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-#music-toggle {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid white;
-  color: white;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  cursor: pointer;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Back to Top Button */
 .back-to-top {

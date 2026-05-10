@@ -52,44 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* --- Mini Game Logic --- */
 
-// YouTube API variables
-let ytPlayer; 
-let isMusicActive = false;
-
-function onYouTubeIframeAPIReady() {
-    if (!document.getElementById('player')) return; // Exit if not on the game page
-
-    ytPlayer = new YT.Player('player', {
-        height: '0',
-        width: '0',
-        videoId: '6FiqLKCVR8k', // נפלת חזק
-        playerVars: {
-            'autoplay': 0,
-            'controls': 0,
-            'loop': 1,
-            'playlist': '6FiqLKCVR8k'
-        },
-        events: {
-            'onReady': () => console.log("YT Player Ready"),
-            'onError': (e) => console.log("YT Error", e)
-        }
-    });
-}
-
-function toggleMusic() {
-    const musicBtn = document.getElementById('music-toggle');
-    if (!ytPlayer || typeof ytPlayer.playVideo !== 'function') return;
-    if (isMusicActive) {
-        ytPlayer.pauseVideo();
-        musicBtn.innerText = "🔇";
-        isMusicActive = false;
-    } else {
-        ytPlayer.playVideo();
-        musicBtn.innerText = "🔊";
-        isMusicActive = true;
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('gameCanvas');
     if (!canvas) return; // Only run game logic if canvas exists
@@ -157,10 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.startGame = function() {
         startScreen.classList.add('hidden');
         gameOverScreen.classList.add('hidden');
-        
-        if (!isMusicActive && ytPlayer) {
-            toggleMusic();
-        }
 
         score = 0;
         speed = 4;

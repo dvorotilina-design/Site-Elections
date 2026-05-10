@@ -34,10 +34,10 @@
                         <a class="nav-link" href="#graph">על אותו גל</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#questionnaire">שאלון התאמה</a>
+                        <a class="nav-link" href="#questionnaire">צ׳ק ליסט</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#parties">מפלגות</a>
+                        <a class="nav-link" href="#parties">מי נגד מי?</a>
                     </li>
                 </ul>
             </div>
@@ -116,21 +116,13 @@
                 <h3 class="fw-bold mb-4" style="color: var(--primary-dark);">עדיין מתלבטים? בואו נראה אתכם גולשים לקלפי!
                 </h3>
                 <div id="game-container" class="mx-auto rounded" style="height: 500px;">
-                    <!-- נגן YouTube -->
-                    <div id="yt-api-container">
-                        <div id="player"></div>
-                    </div>
-
                     <canvas id="gameCanvas"></canvas>
-
                     <div id="score-display">מרחק: <span id="score">0</span> מ'</div>
-
-                    <button id="music-toggle" onclick="toggleMusic()">🔇</button>
 
                     <!-- מסך פתיחה -->
                     <div id="start-screen" class="ui-layer">
                         <h2 class="game-title">גולשים לקלפי</h2>
-                        <p class="game-desc">התחמקו מהתירוצים והגיעו להצביע!<br>השיר יתחיל עם תחילת המשחק.</p>
+                        <p class="game-desc">התחמקו מהתירוצים והגיעו להצביע!</p>
                         <button class="action-btn" onclick="startGame()">התחל לגלוש</button>
                     </div>
 
@@ -517,8 +509,6 @@
 
     <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- YouTube IFrame API -->
-    <script src="https://www.youtube.com/iframe_api"></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
